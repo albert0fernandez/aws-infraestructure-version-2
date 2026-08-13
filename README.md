@@ -11,8 +11,6 @@ Despliegue de una app real de inventario (PHP + MySQL) en AWS, en **cuatro fases
 
 <br/>
 
-[![Terraform CI][ci-terraform-badge]][ci-terraform-url]
-[![Docker Build][ci-docker-badge]][ci-docker-url]
 
 [![AWS][aws-badge]][aws-url]
 [![Terraform][terraform-badge]][terraform-url]
@@ -37,25 +35,7 @@ Despliegue de una app real de inventario (PHP + MySQL) en AWS, en **cuatro fases
 | :---: | :---: | :---: | :---: |
 | App dockerizada | IaC con Terraform | CI/CD | Documentación |
 
-<details>
-<summary><b>📑 Índice completo</b></summary>
-<br/>
 
-- [📖 Introducción](#-introducción)
-- [🐳 Fase 1 — App dockerizada (local)](#-fase-1--app-dockerizada-local)
-- [🧱 Fase 2 — Infraestructura en AWS con Terraform](#-fase-2--infraestructura-en-aws-con-terraform)
-  - [🆚 ¿Por qué Terraform? CloudFormation vs Terraform](#-por-qué-terraform-cloudformation-vs-terraform)
-  - [📐 Arquitectura](#-arquitectura)
-  - [🧩 Estructura y módulos](#-estructura-y-módulos)
-  - [🔐 Variables y despliegue](#-variables-y-despliegue)
-  - [💸 Destroy — decisión FinOps](#-destroy--decisión-finops)
-- [🔁 Fase 3 — CI/CD con GitHub Actions](#-fase-3--cicd-con-github-actions)
-- [📚 Fase 4 — Documentación](#-fase-4--documentación)
-  - [🔒 Seguridad](#-seguridad)
-  - [📈 Mejoras futuras](#-mejoras-futuras)
-- [🤝 Contacto](#-contacto)
-
-</details>
 
 ---
 
