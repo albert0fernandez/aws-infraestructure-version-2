@@ -55,7 +55,7 @@ El repositorio está organizado por fases:
 └── .github/workflows/ # Fase 3 — CI/CD (terraform.yml · docker.yml)
 ```
 
-<p align="right">(<a href="#readme-top">⬆️ volver arriba</a>)</p>
+
 
 ---
 
@@ -86,7 +86,7 @@ La app queda en **`http://localhost:8081`** (el compose mapea `8081:80`).
 
 </details>
 
-<p align="right">(<a href="#readme-top">⬆️ volver arriba</a>)</p>
+
 
 ---
 
@@ -172,7 +172,7 @@ Código .tf  →  apply  →  Infra en AWS  →  verificar  →  destroy
 (describes)    (crea)     (existe/cobra)   (capturas)    (borra todo)
 ```
 
-<p align="right">(<a href="#readme-top">⬆️ volver arriba</a>)</p>
+
 
 ---
 
@@ -187,7 +187,8 @@ Cada cambio se valida y se empaqueta solo, sin pasos manuales. Los workflows viv
 
 Docker Build se autentica en GHCR con el `GITHUB_TOKEN` automático de Actions, sin claves propias. El estado se ve en los **badges** de arriba y en la pestaña **Actions**.
 
-<p align="right">(<a href="#readme-top">⬆️ volver arriba</a>)</p>
+
+
 
 ---
 
@@ -218,7 +219,7 @@ Docker Build se autentica en GHCR con el `GITHUB_TOKEN` automático de Actions, 
 
 Alta disponibilidad (ALB + Auto Scaling en varias AZ), backend remoto del estado (S3 + DynamoDB), CI con `terraform plan` en cada PR (vía OIDC), secretos en AWS Secrets Manager, RDS Multi-AZ y permisos IAM de mínimo privilegio.
 
-<p align="right">(<a href="#readme-top">⬆️ volver arriba</a>)</p>
+
 
 ---
 
