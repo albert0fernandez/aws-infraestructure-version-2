@@ -117,13 +117,15 @@ El acceso lo controlan los ***security groups***: puerto **80** abierto, **22 (S
 
 #### 🧰 Recursos de AWS utilizados
 
-| | Servicio | Categoría | Función |
-|:---:|:---|:---|:---|
-| 🌐 | **VPC** | Networking | Red aislada con subredes públicas y privadas (2 AZ). |
-| 🚪 | **Internet Gateway** | Networking | Salida a Internet para las subredes públicas. |
-| 🛡️ | **Security Groups** | Seguridad | Cortafuegos: 80 público, 22 tu IP, 3306 solo web. |
-| 🖥️ | **EC2** | Computación | *Hosting* de la app PHP en un contenedor Docker. |
-| 🗄️ | **RDS (MySQL 8)** | Base de datos | Base de datos relacional gestionada y privada. |
+| Icono | Servicio | Categoría | Función |
+| :---: | :--- | :--- | :--- |
+| <img src="https://raw.githubusercontent.com/albert0fernandez/aws-cloud-infrastructure-project/main/assets/vpc.png" width="30"> | **VPC** | Networking | Red aislada con subredes públicas y privadas (2 AZ). |
+| <img src="https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/NetworkingContentDelivery/VPCInternetGateway.png" width="30"> | **Internet Gateway** | Networking | Salida a Internet para las subredes públicas. |
+| <img src="https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/NetworkFirewall.png" width="30"> | **Security Groups** | Seguridad | Cortafuegos: 80 público, 22 tu IP, 3306 solo web. |
+| <img src="https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Compute/EC2.png" width="30"> | **EC2** | Computación | *Hosting* de la app PHP en un contenedor Docker. |
+| <img src="https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/Database/RDS.png" width="30"> | **RDS (MySQL 8)** | Base de datos | Base de datos relacional gestionada y privada. |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="30"> | **Terraform** | IaC | Despliegue de toda la infraestructura con módulos reutilizables. |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="30"> | **Docker** | Contenedores | Empaqueta y ejecuta la app PHP dentro de la EC2. |
 
 > Arquitectura **mínima y de coste ~0 € bajo demanda** (Free Tier): sin ELB/ASG, S3 ni Lambda.
 
