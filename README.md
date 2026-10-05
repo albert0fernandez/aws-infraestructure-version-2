@@ -227,7 +227,7 @@ Alta disponibilidad (ALB + Auto Scaling en varias AZ), backend remoto del estado
 
 <div align="center">
 
-**Alberto Fernández Baeza** — construyendo mi camino en Cloud & DevOps
+**Alberto Fernández Baeza** 
 
 [![LinkedIn][linkedin-badge]][linkedin-url]
 [![Gmail][gmail-badge]][gmail-url]
